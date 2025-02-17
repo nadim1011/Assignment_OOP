@@ -36,18 +36,17 @@ public class Main {
 
 solve 3:
 
+code;
+
+
 import java.util.Scanner;
-
 public class Lab3 {
-
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Enter Student ID: ");
             String studentId = scanner.nextLine();
-
             System.out.print("Enter number of courses: ");
             int numCourses = scanner.nextInt();
-
             int totalCredits = 0;
             int totalWeightedScores = 0;
             for (int i = 1; i <= numCourses; i++) {
@@ -58,13 +57,10 @@ public class Lab3 {
                 int ct = scanner.nextInt();
                 System.out.print("Enter AT score (Max 10): ");
                 int at = scanner.nextInt();
-
                 System.out.print("Enter FE score (Max 60): ");
                 int fe = scanner.nextInt();
-
                 int totalMarks = ct + at + fe;
                 double gradePoint = calculateGradePoint(totalMarks);
-
                 totalCredits += credit;
                 totalWeightedScores += gradePoint * credit;
             }
@@ -75,7 +71,6 @@ public class Lab3 {
             System.out.println("Credit Earned: " + totalCredits);
             System.out.printf("CGPA: %.2f\n", cgpa);
             System.out.println("Grade: " + grade);
-
             scanner.close();
         }
         public static double calculateGradePoint(int marks) {
@@ -94,3 +89,4 @@ public class Lab3 {
             else return "F";
         }
     }
+    ![Image](https://github.com/user-attachments/assets/6320ad1e-b04c-4b5e-8caa-213e427aa9ef)
