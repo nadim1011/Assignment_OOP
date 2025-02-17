@@ -6,7 +6,6 @@ public class Main {
         public static void reverse(float[] arr) {
             int left = 0;
             int right = arr.length - 1;
-
             while (left < right) {
                 float temp = arr[left];
                 arr[left] = arr[right];
@@ -33,7 +32,7 @@ public class Main {
         }
     }
 
-
+![Image](https://github.com/user-attachments/assets/e560419f-e335-4223-85c3-a362b23b12dc)
 
 solve 3:
 
